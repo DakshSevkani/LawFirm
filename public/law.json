@@ -1,0 +1,103 @@
+{
+  "tabs": {
+    "basicInfo": {
+      "type": "section",
+      "label": "Firm Identity",
+      "fields": [
+        { "name": "name", "type": "text", "label": "Firm Name", "placeholder": "Aurelia Law" },
+        { "name": "tagline", "type": "textarea", "label": "Firm Tagline / Overview", "placeholder": "Elite corporate litigation and elite legal advisory services powered by decades of proven courtroom success..." },
+        { "name": "email", "type": "email", "label": "Primary Contact Email", "placeholder": "intake@aurelialaw.com" },
+        { "name": "hotline", "type": "text", "label": "Central Desk Hotline", "placeholder": "+1 (800) 555-8274" },
+        { "name": "address", "type": "textarea", "label": "Physical Chambers Address", "placeholder": "Suite 4800, Legal District Tower, Financial Avenue." }
+      ]
+    },
+    "heroSection": {
+      "type": "section",
+      "label": "Hero Showcase",
+      "fields": [
+        { "name": "badge", "type": "text", "label": "Top Banner Badge", "placeholder": "Trusted Corporate Counsel // Est. 1998" },
+        { "name": "headingBold", "type": "text", "label": "Main Heading (Serif)", "placeholder": "Defending Your Rights," },
+        { "name": "headingGold", "type": "text", "label": "Heading Accent (Gold)", "placeholder": "Securing Your Legacy." },
+        { "name": "description", "type": "textarea", "label": "Sub-Hero Narrative", "placeholder": "We provide uncompromising legal defense, high-stakes commercial representation, and meticulous multi-jurisdictional advisory." },
+        { "name": "bgImage", "type": "image", "label": "Hero Background Image URL" }
+      ]
+    },
+    "services": {
+      "type": "dynamic-section",
+      "label": "Practice Areas",
+      "fields": [
+        {
+          "name": "departmentList",
+          "type": "array",
+          "label": "Areas of Practice",
+          "itemFields": [
+            { "name": "title", "type": "text", "label": "Practice Area Name", "placeholder": "Corporate Litigation" },
+            { "name": "description", "type": "textarea", "label": "Strategic Scope Summary", "placeholder": "Cross-border disputes, high-value breach of contract claims, and rigorous appellate defense operations." },
+            { "name": "image", "type": "image", "label": "Showcase Banner Image URL" },
+            { 
+              "name": "points", 
+              "type": "array", 
+              "label": "Core Sub-Specialties List", 
+              "itemFields": [
+                { "name": "point", "type": "text", "label": "Specialty Detail", "placeholder": "M&A Dispute Resolutions" }
+              ] 
+            }
+          ]
+        }
+      ]
+    },
+    "counsel": {
+      "type": "dynamic-section",
+      "label": "Legal Counsel (Partners)",
+      "fields": [
+        {
+          "name": "attorneyList",
+          "type": "array",
+          "label": "Attorneys & Partners",
+          "itemFields": [
+            { "name": "fullName", "type": "text", "label": "Attorney Full Name", "placeholder": "Charles W. Aurelia, Esq." },
+            { "name": "specialty", "type": "text", "label": "Seniority Rank", "placeholder": "Senior Managing Partner" }
+          ]
+        }
+      ]
+    },
+    "testimonials": {
+      "type": "dynamic-section",
+      "label": "Corporate Success Records",
+      "fields": [
+        {
+          "name": "reviewList",
+          "type": "array",
+          "label": "Client Case Review Log",
+          "itemFields": [
+            { "name": "name", "type": "text", "label": "Client Executive Entity", "placeholder": "Marcus Vance" },
+            { "name": "role", "type": "text", "label": "Corporate Subtitle Position", "placeholder": "CEO, Vanguard Logistics" },
+            { "name": "text", "type": "textarea", "label": "Case Feedback Narrative", "placeholder": "Their aggressive defense strategy secured a complete dismissal of the antitrust claim..." },
+            { "name": "rating", "type": "number", "label": "Rating Score", "placeholder": "5" },
+            { "name": "image", "type": "image", "label": "Client Profile Avatar Image URL" }
+          ]
+        }
+      ]
+    },
+    "timings": {
+      "type": "section",
+      "label": "Chambers Hours",
+      "fields": [
+        { "name": "monFri", "type": "text", "label": "Standard Office Hours", "placeholder": "Mon - Fri: 9:00 AM - 6:00 PM" },
+        { "name": "saturday", "type": "text", "label": "Saturday Appointments", "placeholder": "Saturday: By Consultation Only" },
+        { "name": "sunday", "type": "text", "label": "Crisis Operational Hour State", "placeholder": "Sunday: 24/7 Litigation Emergency Line" }
+      ]
+    },
+    "socials": {
+      "type": "section",
+      "label": "Secure Intake Link Hub",
+      "fields": [
+        { "name": "whatsappNumber", "type": "text", "label": "Direct Case Intake WhatsApp", "placeholder": "1234567890" },
+        { "name": "facebook", "type": "text", "label": "Facebook Link", "placeholder": "https://facebook.com" },
+        { "name": "instagram", "type": "text", "label": "Instagram Link", "placeholder": "https://instagram.com" },
+        { "name": "twitter", "type": "text", "label": "Twitter Link", "placeholder": "https://twitter.com" },
+        { "name": "linkedin", "type": "text", "label": "LinkedIn Institutional Profile", "placeholder": "https://linkedin.com" }
+      ]
+    }
+  }
+}
